@@ -472,7 +472,7 @@ work is required for Microsoft to continue to sign and release packages from the
 * Enable cross-compiling for Raspberry-PI arm32 (#4742)
 * Fix macOS brew reinstall command (#4627) (Thanks @TheNewStellW)
 * Improvements to the Travis-CI script (#4689, #4731, #4807)
-* Update OpenSUSE docker image to 42.2 (#4737)
+* Update openSUSE docker image to 42.2 (#4737)
 * Confirm `Start-PSPackage` produces a package (#4795)
 
 ### Code Cleanup

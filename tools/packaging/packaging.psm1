@@ -1005,7 +1005,7 @@ function Test-Dependencies
 {
     foreach ($Dependency in "fpm", "ronn") {
         if (!(precheck $Dependency "Package dependency '$Dependency' not found. Run Start-PSBootstrap -Package")) {
-            # These tools are not added to the path automatically on OpenSUSE 13.2
+            # These tools are not added to the path automatically on openSUSE 13.2
             # try adding them to the path and re-tesing first
             [string] $gemsPath = $null
             [string] $depenencyPath = $null

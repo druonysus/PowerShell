@@ -137,12 +137,12 @@ function Get-EnvironmentInformation
         $environment += @{'IsUbuntu17' = $Environment.IsUbuntu -and $LinuxInfo.VERSION_ID -match '17.04'}
         $environment += @{'IsCentOS' = $LinuxInfo.ID -match 'centos' -and $LinuxInfo.VERSION_ID -match '7'}
         $environment += @{'IsFedora' = $LinuxInfo.ID -match 'fedora' -and $LinuxInfo.VERSION_ID -ge 24}
-        $environment += @{'IsOpenSUSE' = $LinuxInfo.ID -match 'opensuse'}
+        $environment += @{'IsopenSUSE' = $LinuxInfo.ID -match 'opensuse'}
         $environment += @{'IsSLES' = $LinuxInfo.ID -match 'sles'}
-        $environment += @{'IsOpenSUSE13' = $Environmenst.IsOpenSUSE -and $LinuxInfo.VERSION_ID  -match '13'}
-        $environment += @{'IsOpenSUSE42.1' = $Environment.IsOpenSUSE -and $LinuxInfo.VERSION_ID  -match '42.1'}
+        $environment += @{'IsopenSUSE13' = $Environmenst.IsopenSUSE -and $LinuxInfo.VERSION_ID  -match '13'}
+        $environment += @{'IsopenSUSE42.1' = $Environment.IsopenSUSE -and $LinuxInfo.VERSION_ID  -match '42.1'}
         $environment += @{'IsRedHatFamily' = $Environment.IsCentOS -or $Environment.IsFedora}
-        $environment += @{'IsSUSEFamily' = $Environment.IsSLES -or $Environment.IsOpenSUSE}
+        $environment += @{'IsSUSEFamily' = $Environment.IsSLES -or $Environment.IsopenSUSE}
 
         # Workaround for temporary LD_LIBRARY_PATH hack for Fedora 24
         # https://github.com/PowerShell/PowerShell/issues/2511
@@ -1580,7 +1580,7 @@ function Start-PSBootstrap {
 
                 $baseCommand = "$sudo $PackageManager"
 
-                # On OpenSUSE 13.2 container, sudo does not exist, so don't use it if not needed
+                # On openSUSE 13.2 container, sudo does not exist, so don't use it if not needed
                 if($NoSudo)
                 {
                     $baseCommand = $PackageManager
@@ -1600,7 +1600,7 @@ function Start-PSBootstrap {
                 $PackageManager = "zypper --non-interactive install"
                 $baseCommand = "$sudo $PackageManager"
 
-                # On OpenSUSE 13.2 container, sudo does not exist, so don't use it if not needed
+                # On openSUSE 13.2 container, sudo does not exist, so don't use it if not needed
                 if($NoSudo)
                 {
                     $baseCommand = $PackageManager

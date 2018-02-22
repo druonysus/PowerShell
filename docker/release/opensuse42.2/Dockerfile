@@ -1,4 +1,4 @@
-# Docker image file that describes an OpenSUSE 42.2 image with PowerShell installed from PowerShell Release
+# Docker image file that describes an openSUSE 42.2 image with PowerShell installed from PowerShell Release
 
 FROM opensuse:42.2
 

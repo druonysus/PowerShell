@@ -131,7 +131,7 @@ nupkg
 nuspec
 OpenCover
 OpenSSH
-OpenSUSE
+openSUSE
 PackageManagement
 param
 parameterized
@@ -662,7 +662,7 @@ libunwind
 libunwind8
 libuuid1
 openssl-libs
-OpenSUSE
+openSUSE
 zlib1g
 zypper
 #endregion

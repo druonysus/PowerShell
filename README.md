@@ -36,7 +36,7 @@ You can download and install a PowerShell package for any of the following platf
 | [Debian 9][corefx-linux]                   | [.deb][rl-debian9]      | [Instructions][in-deb9]       |
 | [CentOS 7][corefx-linux]                   | [.rpm][rl-centos]       | [Instructions][in-centos]     |
 | [Red Hat Enterprise Linux 7][corefx-linux] | [.rpm][rl-centos]       | [Instructions][in-rhel7]      |
-| [OpenSUSE 42.2][corefx-linux]              | [.rpm][rl-centos]       | [Instructions][in-opensuse422]|
+| [openSUSE 42.2][corefx-linux]              | [.rpm][rl-centos]       | [Instructions][in-opensuse422]|
 | [Fedora 25][corefx-linux]                  | [.rpm][rl-centos]       | [Instructions][in-fedora25]   |
 | [Fedora 26][corefx-linux]                  | [.rpm][rl-centos]       | [Instructions][in-fedora26]   |
 | [macOS 10.12+][corefx-macos]               | [.pkg][rl-macos]        | [Instructions][in-macos]      |

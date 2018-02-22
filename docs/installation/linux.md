@@ -1,7 +1,7 @@
 # Package Installation Instructions
 
 Supports [Ubuntu 14.04][u14], [Ubuntu 16.04][u16], [Ubuntu 17.04][u17], [Debian 8][deb8], [Debian 9][deb9],
-[CentOS 7][cos], [Red Hat Enterprise Linux (RHEL) 7][rhel7], [OpenSUSE 42.2][opensuse], [Fedora 25][fed25],
+[CentOS 7][cos], [Red Hat Enterprise Linux (RHEL) 7][rhel7], [openSUSE 42.2][opensuse], [Fedora 25][fed25],
 [Fedora 26][fed26], and [Arch Linux][arch].
 
 For Linux distributions that are not officially supported,
@@ -377,14 +377,14 @@ sudo yum install https://github.com/PowerShell/PowerShell/releases/download/v6.0
 sudo yum remove powershell
 ```
 
-## OpenSUSE 42.2
+## openSUSE 42.2
 
-> **Note:** When installing PowerShell Core, OpenSUSE may report that nothing provides `libcurl`.
-`libcurl` should already be installed on supported versions of OpenSUSE.
+> **Note:** When installing PowerShell Core, openSUSE may report that nothing provides `libcurl`.
+`libcurl` should already be installed on supported versions of openSUSE.
 Run `zypper search libcurl` to confirm.
 The error will present 2 'solutions'. Choose 'Solution 2' to continue installing PowerShell Core.
 
-### Installation via Package Repository (preferred) - OpenSUSE 42.2
+### Installation via Package Repository (preferred) - openSUSE 42.2
 
 PowerShell Core for Linux is published to official Microsoft repositories for easy installation (and updates).
 
@@ -405,10 +405,10 @@ sudo zypper install powershell
 pwsh
 ```
 
-### Installation via Direct Download - OpenSUSE 42.2
+### Installation via Direct Download - openSUSE 42.2
 
 Download the RPM package `powershell-6.0.1-1.rhel.7.x86_64.rpm`
-from the [releases][] page onto the OpenSUSE machine.
+from the [releases][] page onto the openSUSE machine.
 
 ```sh
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -422,7 +422,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo zypper install https://github.com/PowerShell/PowerShell/releases/download/v6.0.1/powershell-6.0.1-1.rhel.7.x86_64.rpm
 ```
 
-### Uninstallation - OpenSUSE 42.2
+### Uninstallation - openSUSE 42.2
 
 ```sh
 sudo zypper remove powershell
@@ -667,7 +667,7 @@ The following chart shows the .NET Core 2.0 dependencies on different Linux dist
 | Ubuntu 17.04       | libc6, libgcc1, libgssapi-krb5-2, liblttng-ust0, libstdc++6, <br> libcurl3, libunwind8, libuuid1, zlib1g, libssl1.0.0, libicu57 |
 | Debian 8 (Jessie)  | libc6, libgcc1, libgssapi-krb5-2, liblttng-ust0, libstdc++6, <br> libcurl3, libunwind8, libuuid1, zlib1g, libssl1.0.0, libicu52 |
 | Debian 9 (Stretch) | libc6, libgcc1, libgssapi-krb5-2, liblttng-ust0, libstdc++6, <br> libcurl3, libunwind8, libuuid1, zlib1g, libssl1.0.2, libicu57 |
-| CentOS 7 <br> Oracle Linux 7 <br> RHEL 7 <br> OpenSUSE 42.2 <br> Fedora 25 | libunwind, libcurl, openssl-libs, libicu |
+| CentOS 7 <br> Oracle Linux 7 <br> RHEL 7 <br> openSUSE 42.2 <br> Fedora 25 | libunwind, libcurl, openssl-libs, libicu |
 | Fedora 26          | libunwind, libcurl, openssl-libs, libicu, compat-openssl10 |
 
 In order to deploy PowerShell binaries on Linux distributions that are not officially supported,
